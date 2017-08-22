@@ -16,11 +16,15 @@ Please add the folder 'CommonFunctions' to the path before you run any script. I
 
 # Experiment demo:
 
-Adapting stimulus:
+1, Adapting stimulus:
+    
   [Experiment 1: Moving Lines](https://youtu.be/fGQWkYhjlW0)
+    
   [Experiment 3a: Movies](https://youtu.be/WLjJ_x6tFrY)
+    
   [Experiment 3b: Glass patterns](https://youtu.be/RUs59ob3c-8)
 
 
-Test stimulus:
+2, Test stimulus:
+     
   [Vernier lines + Mask](https://youtu.be/qAieEh59wlo)
