@@ -18,15 +18,15 @@ end;
 threshOut_v=[];
 diffBoot_v=[];
 for i = 1:num_sub_1
-eval(['threshOut_v = [threshOut_v;threshOut_',subject_name{i},'1','];']);
-eval(['diffBoot_v = [diffBoot_v, diff(bootThreshOut_',subject_name{i},'1',',1,2)','];']);
+eval(['threshOut_v = [threshOut_v;threshOut_',subject_name{i},'_1','];']);
+eval(['diffBoot_v = [diffBoot_v, diff(bootThreshOut_',subject_name{i},'_1',',1,2)','];']);
 end
 
 threshOut_h=[];
 diffBoot_h=[];
 for i = 1:num_sub_2
-eval(['threshOut_h = [threshOut_h;threshOut_',subject_name{i},'2','];']);
-eval(['diffBoot_h = [diffBoot_h, diff(bootThreshOut_',subject_name{i},'2',',1,2)','];']);
+eval(['threshOut_h = [threshOut_h;threshOut_',subject_name{i},'_2','];']);
+eval(['diffBoot_h = [diffBoot_h, diff(bootThreshOut_',subject_name{i},'_2',',1,2)','];']);
 end
 
 %% threshold raw

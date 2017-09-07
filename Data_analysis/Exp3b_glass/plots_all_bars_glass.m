@@ -3,11 +3,11 @@ clear all;
 %% Putting in data
 
 % for glass
-subject_name_file = {'S1','S2','S3','S4','S5'};
+subject_name = {'S1','S2','S3','S4','S5'};
 
-num_sub = length(subject_name_file);
+num_sub = length(subject_name);
 for i=1:num_sub
-    load([subject_name_file{i},'_' ,'glass', '.mat']);
+    load([subject_name{i},'_' ,'glass', '.mat']);
 end;
 
 %% SECTION TITLE

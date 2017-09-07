@@ -5,7 +5,7 @@ clear all;close all;
 % load bar_4_poster_glass.mat
 subject_name = {'S1','S2','S3','S4','S5','S6','S7','S8'};
 num_sub = length(subject_name);
-cd('Bootstrap_data');
+% cd('Bootstrap_data');
 for i=1:num_sub
     load([subject_name{i},'_' ,'horiz', '.mat']);
     load([subject_name{i},'_' ,'vert', '.mat']);
@@ -17,15 +17,15 @@ end;
 threshOut_v=[];
 diffBoot_v=[];
 for i = 1:num_sub
-eval(['threshOut_v = [threshOut_v;threshOut_',subject_name{i},'1','];']);
-eval(['diffBoot_v = [diffBoot_v, diff(bootThreshOut_',subject_name{i},'1',',1,2)','];']);
+eval(['threshOut_v = [threshOut_v;threshOut_',subject_name{i},'_1','];']);
+eval(['diffBoot_v = [diffBoot_v, diff(bootThreshOut_',subject_name{i},'_1',',1,2)','];']);
 end
 
 threshOut_h=[];
 diffBoot_h=[];
 for i = 1:num_sub
-eval(['threshOut_h = [threshOut_h;threshOut_',subject_name{i},'2','];']);
-eval(['diffBoot_h = [diffBoot_h, diff(bootThreshOut_',subject_name{i},'2',',1,2)','];']);
+eval(['threshOut_h = [threshOut_h;threshOut_',subject_name{i},'_2','];']);
+eval(['diffBoot_h = [diffBoot_h, diff(bootThreshOut_',subject_name{i},'_2',',1,2)','];']);
 end
 
 %% threshold raw

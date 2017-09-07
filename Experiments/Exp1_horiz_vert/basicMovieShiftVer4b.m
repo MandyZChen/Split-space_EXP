@@ -19,7 +19,7 @@ params.merConfig = input('Vertical (1) or horizontal (2): ');%1 1 for vertical, 
 params.adaptConfig = input('Enter adaptation configuration (1 or 2 or 3): '); %adaptation condition
 params.demoForSubj = input('Subject demo (y/n)?','s'); %skips the adaptation, goes straight to vernier
 [~,comp_name] = system('hostname');
-if strcmp(comp_name(1:7) ,'Whitney') %laptop
+if strcmp(comp_name(1:7) ,'Macbook') %laptop
     params.computer = 2; % laptop
 else
     params.computer = 1; % testing device
